@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+:root{
+    --color1: #68686B;
+    --color2: #E9E9E9;
+    --color3: #68686B;
+    --color4: #3C3B3D;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    background-color: var(--color2);
+    margin: 0;
+    width: 100%;
+}
+
+/* Cabeçalho */
+header {
+    background-color: white;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.left-container {
+    display: flex;
+    align-items: center;
+}
+
+ul {
+    padding-left: 0px;
+    list-style: none;
+    display: inline-flex;
+    align-items: center;
+}
+
+li {
+    padding-left: 15px;
+}
+
+.navHover:hover{
+    color: var(--color1);
+    border-bottom: 2px solid var(--color1);
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+/* banner da pagina */
+.banner {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 0;
+}
+
+
+
+.bannerText {
+    text-transform: uppercase;
+    margin: 0;
+    color: white;
+}
+
+/* Caixa de pesquisa */
+.blocoPesquisa {
+    top: 215px;
+    position: absolute;
+    z-index: 100;
+    /* margin-top: 20px; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.caixaPesquisa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color3);
+    border-radius: 10px;
+    height: 110px;
+    width: 926px;
+}
+
+#painelBusca {
+    margin-right: 5px;
+    padding: 0px 0px 0px 15px;
+    border: 0px;
+    width: 650px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+#ButtonBusca {
+    border: 0px;
+    padding: 0px;
+    width: 165px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+/* Central do Index */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+h2 {
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+.cardGrupo {
+    margin-top: 30px;
+    display: inline-flex;
+}
+
+.card {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    margin-left: 8px;
+    margin-right: 8px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    /* background-color: #3C3B3D; */
+    color: white;
+    border-radius: 10px;
+    height: 270px;
+    width: 210px;
+    transition: 0.9s;
+}
+
+.card:hover {
+    cursor: pointer;
+    transition: 0.7s;
+    height: 290px;
+    width: 230px;
+    font-size: 25px;
+    padding-left: 15px;
+    /* justify-content: center;
+    align-items: center; */
+}
+
+/* Footer da pagina */
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color4);
+    margin-top: 50px;
+    height: 100px;
+}
+
+.footerText {
+    font-weight: 300;
+    color: white;
+}
+
+/* Imagem background */
+
+.bannerIndex {
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 100% auto;
+    background-image: url(image/bannerIndex.jpg);
+}
+
+.bannerSobre {
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 100% auto;
+    background-image: url(image/bannerSobre.png);
+}
+
+.suvImg {
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 100% auto;
+    background-image: url(image/suv.png);
+}
+
+.picapeImg {
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 100% auto;
+    background-image: url(image/picape.png);
+}
+
+.sedaImg {
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 100% auto;
+    background-image: url(image/seda.png);
+}
+
+.cupeimg {
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 100% auto;
+    background-image: url(image/cupe.png);
+}
+
+.minivanIng {
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 100% auto;
+    background-image: url(image/minivan.png);
+}
+
+.hatchImg {
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 100% auto;
+    background-image: url(image/hatch.png);
+}
+
+.conversivelIgm {
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 100% auto;
+    background-image: url(image/conversivel.png);
+}
+
+.stationIng {
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 100% auto;
+    background-image: url(image/station.png);
+}
+
+/* Pagina Sobre */
+.blocoSobre {
+    display: flex;
+    margin-bottom: 60px;
+}
+
+.blocoItemSobre {
+    margin: 0 8px;
+    width: 470px;
+}
+
+/* Migalha */
+.migalhaBox {
+    color: var(--color1);
+    display: flex;
+    justify-content: center;
+}
+
+.migalha {
+    display: inline-flex;
+    font-size: 12px;
+    width: 965px;
+    /* margin-top: 20px;
+    margin-left: 200px; */
+}
+
+.migalhalink {
+    text-decoration: underline;
+}
+
+.migalhaText {
+    margin-left: 5px;
+}
+
+.migalhaText::after {
+    content: " > ";
+}
+
+.migalhaText:last-child:after {
+    content: "";
+}
